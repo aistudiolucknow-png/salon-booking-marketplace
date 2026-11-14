@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fffaf8;
+  color: #292323;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+  background: white;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.navbar h2 {
+  color: #292323;
+}
+
+.navbar h2 span {
+  color: #d85b75;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #444;
+}
+
+.owner-btn,
+.search-box button,
+.salon-info button,
+.owner-section button {
+  background: #d85b75;
+  color: white;
+  padding: 13px 22px;
+  border-radius: 8px;
+}
+
+.hero {
+  background: linear-gradient(120deg, #ffe1e5, #fff0e8);
+  padding: 100px 8%;
+  min-height: 420px;
+}
+
+.hero-content {
+  max-width: 750px;
+}
+
+.tagline {
+  color: #d85b75;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #d85b75;
+}
+
+.hero-content > p {
+  line-height: 1.7;
+  color: #666;
+}
+
+.search-box {
+  display: flex;
+  background: white;
+  padding: 8px;
+  border-radius: 10px;
+  margin-top: 30px;
+  max-width: 600px;
+  gap: 10px;
+}
+
+.search-box input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  padding: 12px;
+}
+
+.services,
+.salons {
+  padding: 65px 7%;
+}
+
+.services h2,
+.salons h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.service-grid div {
+  background: white;
+  padding: 25px 10px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px #0000000d;
+  font-size: 28px;
+}
+
+.service-grid p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.salons > p {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.salon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.salon-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px #00000012;
+}
+
+.salon-image {
+  height: 160px;
+  background: #ffe6e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 65px;
+}
+
+.salon-info {
+  padding: 22px;
+}
+
+.salon-info h3 {
+  margin-bottom: 12px;
+}
+
+.salon-info p {
+  color: #777;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.salon-info h4 {
+  color: #d85b75;
+  margin: 15px 0;
+}
+
+.owner-section {
+  background: #30252a;
+  color: white;
+  text-align: center;
+  padding: 65px 20px;
+}
+
+.owner-section p {
+  margin: 20px 0;
+}
+
+footer {
+  background: #211a1d;
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 18px;
+  }
+
+  .navbar nav {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    font-size: 13px;
+  }
+
+  .hero {
+    padding: 65px 20px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .salon-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+}
+
+
+
+
